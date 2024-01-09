@@ -1,0 +1,262 @@
+.bd{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.history_sec{
+    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.chat_sec_header{
+    display: flex;
+    justify-content: space-between;
+}
+.chat_sec_header h2{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.history_sec h2{
+    visibility: hidden;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.chat_sec{
+    flex: 80%;
+    margin-left: 5px;
+}
+
+.history_sec span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.history_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat_body{
+    width: 100%;
+    height: 1106px;
+    flex-shrink: 0;
+    border-radius: 20px 0px 0px 0px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user_list_ech{
+    display: flex;
+}
+.user_stat{
+    margin: 15px;
+}
+.user_item{
+    width: 211px;
+    height: 67px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_item span{
+    overflow:hidden;
+    margin: 5px;
+}
+.profiel_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profiel_ span{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.profil_pic{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background-color: grey;
+    margin-left: 10px;
+    margin-right:10px ;
+}
+
+.on_line_indc{
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    fill: #05FF00;
+    position:relative;
+    right: -195px;
+    top: -20px;
+}
+
+.msg_space{
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.main{
+    overflow-y: scroll;
+}
+
+.message_bx{
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+    
+}
+
+.us{
+    align-self: flex-end;
+}
+
+.msg_content{
+    width: 512px;
+    height: 100%;
+    padding: 5px;
+    flex-shrink: 0;
+    border-radius: 0px 20px 20px 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.msg_content_us{
+    width: 512px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 20px 0px 20px 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+.msg_content_us p{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.msg_content p{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.msg_input{
+    width: 98%;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6px;
+    margin-left: 15px;
+}
+
+.msg_input input{
+   flex: 60;
+   height: 90%;
+   border: none;
+   border-radius: 50px;
+   margin-left: 3px;
+   outline: none;
+}
+
+.sent_msg_btn{
+    /*flex: 1.5;*/
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.msg_res{
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    border: #cdcdcd solid 5px;
+    border-radius: 50px;
+    padding: 4px;
+    height: 25px;
+    width: 300px;
+}
+
+/* Barre de défilement pour les navigateurs WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #acacac; /* Couleur de la poignée (thumb) de la barre de défilement */
+    border-radius: 6px; /* Rayon de bordure de la poignée */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Couleur de fond de la piste de la barre de défilement */
+}
+
+/* Barre de défilement pour les navigateurs Gecko (Firefox) */
+/* Notez que Firefox ne prend pas en charge la personnalisation de la piste de défilement */
+/* Seulement la poignée de défilement peut être personnalisée dans Firefox */
+
+/* Couleur de la poignée (thumb) de la barre de défilement */
+
+
+/* Rayon de bordure de la poignée */
+*::-moz-scrollbar-thumb {
+    border-radius: 6px;
+}
